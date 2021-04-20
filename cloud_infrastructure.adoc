@@ -1,38 +1,38 @@
 = Cloud infrastructure notes
-Dannyboy
+Holomech
 
 == Virtual machines
 
 .Hypervisor types
-* Type 1: bare-metal, runs directly on hardware, (KVM, VMware ESXi, Microsoft Hyper-V etc.)
-* Type 2: hosted, runs on OS layer, slower, (VirtualBox, VMware Workstation etc.)
+Type 1:: bare-metal, runs directly on hardware, (KVM, VMware ESXi, Microsoft Hyper-V etc.)
+Type 2:: hosted, runs on OS layer, slower, (VirtualBox, VMware Workstation etc.)
 
 .Virtual machines types
-* Shared VMs: multi-tenant
-* Transient VMs: discounted, when there's unused capacity, can be destroyed without warning
-* Reserved VMs: reserve resources for future use, guaranteed availability
-* Dedicated hosts: single-tenant
+Shared VMs:: multi-tenant
+Transient VMs:: discounted, when there's unused capacity, can be destroyed without warning
+Reserved VMs:: reserve resources for future use, guaranteed availability
+Dedicated hosts:: single-tenant
 
 == Virtual networks
 
 .Virtual network elements
 * Virtual private cloud (VPC)
-* Subnets: use Access Control Lists (ACL) for security
-* Security groups: provide security for individual instances
+Subnets:: use Access Control Lists (ACL) for security
+Security groups:: provide security for individual instances
 * Gateways
 * Load balancers
 
 == Cloud storage
 
 .Storage types
-* Direct attached: local VM disk
-* File storage: NFS type over ethernet
-* Block storage: hard drive volume over very fast fiber connection
-* Object storage: accessed by API, slowest, pay only for stored data, for static data dumps
+Direct attached:: local VM disk
+File storage:: NFS type over ethernet
+Block storage:: hard drive volume over very fast fiber connection
+Object storage:: accessed by API, slowest, pay only for stored data, for static data dumps
 
 .Object storage tiers
-* Standard tier: for frequently accessed data, high cost
-* Vault/Archivce tier: lower cost, access limits
+Standard tier:: for frequently accessed data, high cost
+Vault / Archive tier:: lower cost, access limits
 
 IOPS:: Input/Output Operations Per Second
 
