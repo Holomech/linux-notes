@@ -1,3 +1,7 @@
+****
+link:index.html[Back to index]
+****
+
 = Cloud infrastructure notes
 Holomech
 
