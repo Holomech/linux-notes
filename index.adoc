@@ -1,0 +1,8 @@
+= Index of my notes on using Linux
+Holomech
+
+Welcome to my webpage, where I'd like to share my notes on using Linux commands.
+If you find the notes useful, you're welcome to use and share them!
+
+.List of my notes
+* link:cloud_infrastructure.html[Cloud Infrastructure notes]
