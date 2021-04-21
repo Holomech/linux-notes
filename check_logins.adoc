@@ -1,0 +1,22 @@
+****
+link:index.html[Back to index]
+****
+
+= How to check who was logged on last in your Linux sytem
+Holomech
+
+== Show past successful logins
+Any regular user can check, who was logged on in the past.
+Here is how to do it.
+
+. Open a terminal window.
+. Use the following command to show past successful logins.
+
+[source,Shell]
+----
+last | less # <1>
+----
+<1> It is better to pipe the output of the _last_ command through the _less_ utility, as the output can be quite long.
+
+In the output you should see several columns. The first is the username, followed by that user's terminal identifier.
+You can also see the date and time of the successful login. 

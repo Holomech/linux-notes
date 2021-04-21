@@ -5,4 +5,5 @@ Welcome to my webpage, where I'd like to share my notes on using Linux commands.
 If you find the notes useful, you're welcome to use and share them!
 
 .List of my notes
+* link:check_logins.html[How to check past logins on Linux]
 * link:cloud_infrastructure.html[Cloud Infrastructure notes]

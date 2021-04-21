@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="generator" content="AsciiDoc 10.0.0a2">
-<title>Index of my notes on using Linux</title>
+<title></title>
 <style type="text/css">
 /* Shared CSS for AsciiDoc xhtml11 and html5 backends */
 
@@ -732,26 +732,44 @@ asciidoc.install();
 </head>
 <body class="article">
 <div id="header">
-<h1>Index of my notes on using Linux</h1>
-<span id="author">Holomech</span><br>
 </div>
 <div id="content">
-<div id="preamble">
+<div class="sidebarblock">
+<div class="content">
+<div class="paragraph"><p><a href="index.html">Back to index</a></p></div>
+</div></div>
+<h1 id="_how_to_check_who_was_logged_on_last_in_your_linux_sytem">How to check who was logged on last in your Linux sytem</h1>
+<div class="paragraph"><p>Holomech</p></div>
+<div class="sect1">
+<h2 id="_show_past_successful_logins">Show past successful logins</h2>
 <div class="sectionbody">
-<div class="paragraph"><p>Welcome to my webpage, where I&#8217;d like to share my notes on using Linux commands.
-If you find the notes useful, you&#8217;re welcome to use and share them!</p></div>
-<div class="ulist"><div class="title">List of my notes</div><ul>
+<div class="paragraph"><p>Any regular user can check, who was logged on in the past.
+Here is how to do it.</p></div>
+<div class="olist arabic"><ol class="arabic">
 <li>
 <p>
-<a href="check_logins.html">How to check past logins on Linux</a>
+Open a terminal window.
 </p>
 </li>
 <li>
 <p>
-<a href="cloud_infrastructure.html">Cloud Infrastructure notes</a>
+Use the following command to show past successful logins.
 </p>
 </li>
-</ul></div>
+</ol></div>
+<div class="listingblock">
+<div class="content monospaced">
+<pre>last | less # <b>&lt;1&gt;</b></pre>
+</div></div>
+<div class="colist arabic"><ol>
+<li>
+<p>
+It is better to pipe the output of the <em>last</em> command through the <em>less</em> utility, as the output can be quite long.
+</p>
+</li>
+</ol></div>
+<div class="paragraph"><p>In the output you should see several columns. The first is the username, followed by that user&#8217;s terminal identifier.
+You can also see the date and time of the successful login.</p></div>
 </div>
 </div>
 </div>
@@ -759,7 +777,7 @@ If you find the notes useful, you&#8217;re welcome to use and share them!</p></d
 <div id="footer">
 <div id="footer-text">
 Last updated
- 2021-04-21 11:02:36 Central Europe Daylight Time
+ 2021-04-21 11:00:44 Central Europe Daylight Time
 </div>
 </div>
 </body>
